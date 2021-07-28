@@ -26,5 +26,12 @@ const app = new Vue({
         isActive(indexNumber) {
             return this.currentImage == indexNumber ? `active` : '';
         },
+        increase() {
+            if (this.currentImage === this.images.length - 1) {
+                this.currentImage = 0;
+            } else {
+                this.currentImage++;
+            }
+        },
     }
 });

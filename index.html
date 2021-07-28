@@ -29,7 +29,7 @@
                     <img v-for="(image, index) in images" :src="image" class="img-fluid" :class="isActive(index)">
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-circle-right"></i>
+                    <i class="fas fa-chevron-circle-right" @click='increase'></i>
                 </div>
             </div>
         </div>
