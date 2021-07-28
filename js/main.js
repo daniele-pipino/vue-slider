@@ -33,5 +33,12 @@ const app = new Vue({
                 this.currentImage++;
             }
         },
+        decrease() {
+            if (this.currentImage > 0) {
+                this.currentImage--;
+            } else {
+                this.currentImage = this.images.length - 1;
+            }
+        }
     }
 });
