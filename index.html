@@ -17,19 +17,25 @@
 
 <body>
     <!-- struttura slider -->
+    <h1 class="text-center">Travel the world</h1>
     <div id="root">
         <div class="container my-5">
             <div class="row">
-                <div class="col-2 d-flex align-items-center justify-content-center">
+                <div class="col-2 d-flex align-items-center justify-content-end">
                     <!-- icon -->
-                    <i class="fas fa-chevron-circle-left" @click='decrease'></i>
+                    <i class="fas fa-chevron-circle-left fa-3x" @click='decrease'></i>
                 </div>
-                <div class=" col-8 d-flex align-items-center justify-content-center">
-                    <!-- images -->
+                <div class="col-8 d-flex flex-column align-items-center position-relative">
                     <img v-for="(image, index) in images" :src="image" class="img-fluid" :class="isActive(index)">
+                    <div class="slider ">
+                        <div class="dot mx-2"></div>
+                        <div class="dot mx-2"></div>
+                        <div class="dot mx-2"></div>
+                        <div class="dot mx-2"></div>
+                    </div>
                 </div>
-                <div class="col-2 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-chevron-circle-right" @click='increase'></i>
+                <div class="col-2 d-flex align-items-center">
+                    <i class="fas fa-chevron-circle-right fa-3x" @click='increase'></i>
                 </div>
             </div>
         </div>

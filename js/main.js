@@ -4,6 +4,9 @@
 // 3- recupero index array
 // 4- comparazione index array e immagine
 // 5- inserimento classe active
+// 6- inserimento funnzioni inceras e edecrease
+// 7- inserimento dot slider
+
 
 
 
