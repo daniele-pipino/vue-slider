@@ -6,9 +6,8 @@
 // 5- inserimento classe active
 // 6- inserimento funnzioni inceras e edecrease
 // 7- inserimento dot slider
-
-
-
+// 8- inserimento funzione per classe activedoc
+// --------------------------------------------------SVOLGIMENTO--------------------------------------------------
 
 
 // inizializzazzione vue developer tool
@@ -42,6 +41,9 @@ const app = new Vue({
             } else {
                 this.currentImage = this.images.length - 1;
             }
-        }
+        },
+        isDotActive(indexNumber) {
+            return this.currentImage == indexNumber ? `activedot` : '';
+        },
     }
 });

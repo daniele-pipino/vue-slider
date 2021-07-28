@@ -28,10 +28,8 @@
                 <div class="col-8 d-flex flex-column align-items-center position-relative">
                     <img v-for="(image, index) in images" :src="image" class="img-fluid" :class="isActive(index)">
                     <div class="slider ">
-                        <div class="dot mx-2"></div>
-                        <div class="dot mx-2"></div>
-                        <div class="dot mx-2"></div>
-                        <div class="dot mx-2"></div>
+                        <div v-for="(dot, dotIndex) in images" class="mx-2 dot" :class="isDotActive(dotIndex)"
+                            @click='dotSelect'></div>
                     </div>
                 </div>
                 <div class="col-2 d-flex align-items-center">
